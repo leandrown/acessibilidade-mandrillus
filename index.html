@@ -86,18 +86,18 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/The_Table_%28restaurant%29_logo.png" width="100"
       alt="Logotipo do Restaurante">
     <!-- <ul>
-            <li>
-                <a href="#topbar">Início</a>
-            </li>
-            <li>
-                <a href="#Institucional">Institucional</a>
-            </li>
-            <li>
-                <a href="#Unidades">Restaurantes</a>
-            </li>
-            <li>
-                <a href="#Contato">Contato</a>
-            </li>
+          <li>
+            <a href="#topbar">Início</a>
+          </li>
+          <li>
+            <a href="#Institucional">Institucional</a>
+          </li>
+          <li>
+            <a href="#Unidades">Restaurantes</a>
+          </li>
+          <li>
+            <a href="#Contato">Contato</a>
+          </li>
         </ul> -->
     <button style="margin-right: 3%;" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
       data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
@@ -123,7 +123,7 @@
   </nav>
 
   <header id="header" role="banner">
-    <!-- <img src="rimonim-deli-sequences-503.jpg" alt="Pratos"> -->
+    <!-- <img src="img/rimonim-deli-sequences-503.jpg" alt="Pratos"> -->
   </header>
 
   <section class="cardapio">
@@ -244,10 +244,10 @@
 
   <!-- BOOTSTRAP -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="jquery.santillanaAcessibilidade.min.js"></script>
-  <script src="curvycorners.js"></script>
-  <script src="libGlobal.js"></script>
-  <script src="custom.js"></script>
+  <script src="js/jquery.santillanaAcessibilidade.min.js"></script>
+  <script src="js/curvycorners.js"></script>
+  <script src="js/libGlobal.js"></script>
+  <script src="js/custom.js"></script>
   <script>
     var zoom;
 
@@ -300,17 +300,17 @@
         console.warn(error);
       });
 
-      /*jQuery.get( urlpage, function( data ) {
-          $( "#iframe" ).html( data );
-          alert( "Load was performed." );
-      });*/
+      jQuery.get(urlpage, function (data) {
+        $("#iframe").html(data);
+        alert("Load was performed.");
+      });
 
-      /*$("#iframe").load(urlpage, function(responseTxt, statusTxt, xhr){
-          if(statusTxt == "success")
-              alert("External content loaded successfully!");
-          if(statusTxt == "error")
-              alert("Error: " + xhr.status + ": " + xhr.statusText);
-      });*/
+      $("#iframe").load(urlpage, function (responseTxt, statusTxt, xhr) {
+        if (statusTxt == "success")
+          alert("External content loaded successfully!");
+        if (statusTxt == "error")
+          alert("Error: " + xhr.status + ": " + xhr.statusText);
+      });
     }
 
     iframe('pizzas.html');

@@ -57,7 +57,7 @@ body .barraAcessivel ul li a.contraste {
 }
 body .barraAcessivel ul li a.contraste:before {
   content: "";
-  background-image: url("contraste.png");
+  background-image: url("../img/contraste.png");
   background-position: center center;
   background-repeat: no-repeat;
   width: 16px;
@@ -73,7 +73,7 @@ body .barraAcessivel ul li a.pgmapadosite {
 }
 body .barraAcessivel ul li a.pgmapadosite:before {
   content: "";
-  background-image: url("icon-mapadosite.png");
+  background-image: url("../img/icon-mapadosite.png");
   background-position: center center;
   background-repeat: no-repeat;
   width: 18px;
@@ -93,7 +93,7 @@ body .barraAcessivel ul li a.pglibras {
 }
 body .barraAcessivel ul li a.pglibras:before {
   content: "";
-  background-image: url("icon-libras.png");
+  background-image: url("../img/icon-libras.png");
   background-position: center center;
   background-repeat: no-repeat;
   width: 30px;
