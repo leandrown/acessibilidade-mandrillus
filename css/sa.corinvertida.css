@@ -1,0 +1,9 @@
+html body {
+  background-color: #000 !important;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+html body .noFilter {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}

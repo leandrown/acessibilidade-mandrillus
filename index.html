@@ -1,0 +1,331 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurantes (Modelo)</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/santillanaAcessibilidade.css">
+    <link rel="stylesheet" href="css/santillanaAcessibilidadeCustom.css">
+
+    <link id="sa_altocontraste" rel="stylesheet" href="css/sa.altocontraste.css" disabled>
+    <link id="sa_amarelopreto" rel="stylesheet" href="css/sa.amarelopreto.css" disabled>
+    <link id="sa_cinzainvertida" rel="stylesheet" href="css/sa.cinzainvertida.css" disabled>
+    <link id="sa_corinvertida" rel="stylesheet" href="css/sa.corinvertida.css" disabled>
+    <link id="sa_monocromatico" rel="stylesheet" href="css/sa.monocromatico.css" disabled>
+
+</head>
+
+<body>
+
+    <!-- barra de acessibilidade -->
+    <div class="barraAcessivel" role="menubar" aria-label="Barra de Acessibilidade">
+        <div class="container">
+            <div class="row">
+                <ul class="pull-left hidden-xs hidden-sm" aria-label="Navegação pela página">
+                    <li role="menuitem"><a accesskey="1" href="#topbar" title="Ir para o Menu Principal"><span
+                                lang="pt-br">Ir para Menu Principal</span> <span>[1]</span></a></li>
+                    <li role="menuitem"><a accesskey="2" href="#cardapio" title="Ir para o menu cardáío"><span
+                                lang="pt-br">Ir para o Cardápio</span> <span>[2]</span></a></li>
+                    <li role="menuitem" class="closeContrast"><a accesskey="3" href="#pedidos"
+                            title="Ir para o Pedidos"><span lang="pt-br">Ir para Pedidos</span> <span>[3]</span></a>
+                    </li>
+                    <li role="menuitem" class="closeContrast"><a accesskey="4" href="#footer"
+                            title="Ir para o rodapé"><span lang="pt-br">Ir para o rodapé</span> <span>[4]</span></a>
+                    </li>
+                </ul>
+                <ul class="pull-right" aria-label="Controles de acessibilidade do site">
+                    <li role="menuitem" class="closeContrast"><a href="#0" onclick="iframe('acessibilidade.html')"
+                            title="Acessar a página de acessibilidade" class="pgacessibilidade"><span
+                                lang="pt-br">Acessibilidade<span></span></span></a></li>
+                    <li role="menuitem" class="zoomButtons"><a href="#" title="Ampliar tela" onclick="zoomIn()"
+                            class="zoomIn gm5zoom"><span lang="pt-br">A+<span></span></span></a></li>
+                    <li role="menuitem" class="zoomButtons closeContrast"><a href="#" title="Reduzir tela"
+                            onclick="zoomOut()" class="zoomOut gm5zoom"><span lang="pt-br">A-<span></span></span></a>
+                    </li>
+                    <li role="menuitem" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle contraste" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contraste
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" title="Preto, branco e amarelo" href="#"
+                                onclick="setStyle('sa_amarelopreto')">Preto, branco e amarelo</a>
+                            <a class="dropdown-item" title="Contraste aumentado" href="#"
+                                onclick="setStyle('sa_altocontraste')">Contraste aumentado</a>
+                            <a class="dropdown-item" title="Monocromático" href="#"
+                                onclick="setStyle('sa_monocromatico')">Monocromático</a>
+                            <a class="dropdown-item" title="Escala de cinza invertida" href="#"
+                                onclick="setStyle('sa_cinzainvertida')">Escala de cinza invertida</a>
+                            <a class="dropdown-item" title="Cor invertida" href="#"
+                                onclick="setStyle('sa_corinvertida')">Cor invertida</a>
+                            <a class="dropdown-item" title="Cores originais" href="#" onclick="setStyle()">Cores
+                                originais</a>
+                        </div>
+                    </li>
+                    <li role="menuitem"><a href="#9" onclick="iframe('mapadosite.html')"
+                            title="Acessar a página de mapa do site" class="pgmapadosite"><span lang="pt-br">Mapa do
+                                site<span></span></span></a></li>
+                    <li role="menuitem" class="lilibras"><a href="http://www.vlibras.gov.br/"
+                            title="http://www.vlibras.gov.br/" class="pglibras" target="_blank"><span
+                                lang="pt-br">Libras<span></span></span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav id="topbar" class="navbar navbar-expand-lg navbar-light">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/The_Table_%28restaurant%29_logo.png" width="100"
+            alt="Logotipo do Restaurante">
+        <!-- <ul>
+            <li>
+                <a href="#topbar">Início</a>
+            </li>
+            <li>
+                <a href="#Institucional">Institucional</a>
+            </li>
+            <li>
+                <a href="#Unidades">Restaurantes</a>
+            </li>
+            <li>
+                <a href="#Contato">Contato</a>
+            </li>
+        </ul> -->
+        <button style="margin-right: 3%;" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse justify-content-md-left collapse" id="navbarsExample08" style="margin-left: 25px;">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#topbar">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Institucional">Institucional</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Unidades">Restaurantes</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#Contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="header" role="banner">
+        <!-- <img src="rimonim-deli-sequences-503.jpg" alt="Pratos"> -->
+    </header>
+
+    <section class="cardapio">
+        <!-- Cardapio -->
+        <article class="a-article">
+            <aside id="cardapio" role="navigation" aria-label="Menu com opções de Cardápio">
+                <ul>
+                    <li><a href="#1" onclick="iframe('pratos.html')">Pratos Executivos</li>
+                    <li><a href="#2" onclick="iframe('pizzas.html')">Pizzas</a></li>
+                    <li><a href="#3" onclick="iframe('lanches.html')">Lanches</a></li>
+                    <li><a href="#4" onclick="iframe('salgados.html')">Salgados</a></li>
+                    <li><a href="#5" onclick="iframe('saladas.html')">Saladas</a></li>
+                    <li><a href="#6" onclick="iframe('carnes.html')">Carnes</a></li>
+                    <li><a href="#7" onclick="iframe('massas.html')">Massas</a></li>
+                </ul>
+            </aside>
+            <div style="padding:20px;width: 100%;" role="main">
+                <div id="iframe">
+                </div>
+
+                <div style="margin-top:30px;">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Detalhes
+                    </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Fazer Pedido
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Pedidos -->
+        <article id="pedidos" class="a-art">
+            <H1 style="text-align: center; margin-bottom: 30px;">Use o Formulário Abaixo para enviar seu pedido</H1>
+            <div style="max-width:400px; margin:0 auto;">
+                <div role="form">
+                    <div>
+                        <input type="text" placeholder="Seu Nome" aria-describeby="desc-nome">
+                        <span id="desc-nome" style="opacity:0;display:none;">Escreva seu Nome completo</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Outro Lanche?" aria-labelledby="Outro Lanche?">
+                    </div>
+                    <div aria-label="Selecione abaixo se você quer algum adicional" style="margin-bottom:20px;">
+                        <input type="checkbox" aria-labelledby="Picles"> <label>Picles</label><br>
+                        <input type="checkbox" aria-labelledby="Dobro de Queijo"> <label>Dobro de Queijo</label><br>
+                        <input type="checkbox" aria-labelledby="Beicon"> <label>Bacon</label><br>
+                        <input type="checkbox" aria-labelledby="Molho Picante"> <label>Molho Picante</label><br>
+                        <input type="checkbox" aria-labelledby="Tomate Seco"> <label>Tomate Seco</label><br>
+                        <input type="checkbox" aria-labelledby="Cream Cheese"> <label>Cream Cheese</label><br>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Observações"
+                        aria-label="Escreva aqui observações"></textarea>
+                    <div>
+                        <button class="btn btn-danger" aria-describeby="desc-send" data-toggle="modal"
+                            data-target="#exampleModal">Pedir</button>
+                        <span id="desc-send" style="opacity:0;">Use este botão para Confirmar o seu pedido</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- Institucional -->
+    <section id="Institucional">
+        <h1>Institucional</h1>
+        <p>O restaurante modelo é um projeto que foi criado para demonstrar um padrão de site acessível para o maior
+            número possível de pessoas.</p>
+    </section>
+    <!-- Unidades -->
+    <section id="Unidades">
+        <h1>Restaurantes</h1>
+    </section>
+    <!-- Contato -->
+    <section id="Contato">
+        <h1>Contato</h1>
+        <div style="max-width:400px; margin:0 auto;">
+            <div>
+                <input type="text" placeholder="Seu Nome">
+            </div>
+            <div>
+                <input type="text" placeholder="Seu Email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+            <div>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" role="contentinfo">
+        <span>Restaurante Modelo</span>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="Modal de Exemplo"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-danger">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="jquery.santillanaAcessibilidade.min.js"></script>
+    <script src="curvycorners.js"></script>
+    <script src="libGlobal.js"></script>
+    <script src="custom.js"></script>
+    <script>
+        var zoom;
+
+        function setStyle(styleid) {
+            var sa_altocontraste = document.getElementById('sa_altocontraste');
+            var sa_amarelopreto = document.getElementById('sa_amarelopreto');
+            var sa_cinzainvertida = document.getElementById('sa_cinzainvertida');
+            var sa_corinvertida = document.getElementById('sa_corinvertida');
+            var sa_monocromatico = document.getElementById('sa_monocromatico');
+
+            sa_altocontraste.disabled = true;
+            sa_amarelopreto.disabled = true;
+            sa_cinzainvertida.disabled = true;
+            sa_corinvertida.disabled = true;
+            sa_monocromatico.disabled = true;
+
+            if (styleid) {
+                var atual = document.getElementById(styleid);
+                atual.disabled = false;
+            }
+        }
+
+        function zoomInit() {
+            zoom = parseInt(localStorage.getItem('zoom') || 100);
+            //zoom = 100;
+            console.log(zoom);
+            document.getElementsByTagName("body")[0].style.zoom = zoom + '%';
+        }
+
+        zoomInit();
+
+        function zoomIn() {
+            zoom += 20;
+            document.getElementsByTagName("body")[0].style.zoom = zoom + '%';
+            localStorage.setItem('zoom', zoom);
+        }
+
+        function zoomOut() {
+            if (zoom > 100) {
+                zoom -= 20;
+                document.getElementsByTagName("body")[0].style.zoom = zoom + '%';
+                localStorage.setItem('zoom', zoom);
+            }
+        }
+
+        function iframe(urlpage) {
+            fetch_text(urlpage).then((html) => {
+                document.getElementById("iframe").innerHTML = html;
+            }).catch((error) => {
+                console.warn(error);
+            });
+
+            /*jQuery.get( urlpage, function( data ) {
+                $( "#iframe" ).html( data );
+                alert( "Load was performed." );
+            });*/
+
+            /*$("#iframe").load(urlpage, function(responseTxt, statusTxt, xhr){
+                if(statusTxt == "success")
+                    alert("External content loaded successfully!");
+                if(statusTxt == "error")
+                    alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });*/
+        }
+
+        iframe('pizzas.html');
+
+        function fetch_text(url) {
+            return fetch(url).then((response) => (response.text()));
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

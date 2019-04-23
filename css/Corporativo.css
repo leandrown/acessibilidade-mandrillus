@@ -1,0 +1,250 @@
+/* ============================================ */
+/* Background									*/
+/* ============================================ */
+
+.bgAreaHeaderSantillana		{ background:url(../images/Header/bgHeaderSantillana.jpg) repeat-x; height:30px; }
+.bgAreaFooterSantillana		{ background:url(../images/Footer/bgFooterSantillana.jpg) repeat-x; height:39px; }
+.bgCinza					{ background-color: #F6F6F6; }	
+.bgCinza2					{ background-color: #E7E7E2; }
+.BgLoginCorporativo			{ background: url("../images/Background/BgLoginCorporativo.png") no-repeat scroll left top transparent; height: 331px; width: 285px; padding: 22px 32px 10px;}
+.bgInputTextBuscaLivroCatalogo { background: url("../../Portal/images/LivroCatalogo/bgInputPesquisarLivroCatalogo.png") no-repeat scroll left top transparent;  height: 36px; width: 181px; padding: 0px; border: 0;}
+.bgInputTextLupaBuscaLivroCatalogo { background: url("../../Portal/images/LivroCatalogo/Lupa.png") no-repeat scroll left top transparent;  height: 36px; width: 26px; padding: 0px; border: 0;}
+
+/* ============================================ */
+/* Input										*/
+/* ============================================ */
+/* ============================================ */
+/* Tela de Seleção de Usuário					*/
+/* ============================================ */
+
+.selectAcc{width:48%; float:left; margin-right:10px; margin-top: 20px;}
+.selectAcc input[type="radio"]{display:none;}
+.btnAcc{text-decoration:none;color:#333; cursor:pointer;}
+.infSelectAcc{border-radius: 5px;border:1px solid #d2d2d2; background-color:#f6f6f6; width:100%;}
+.infSelectAcc:hover{background-color: #FFFEEB; border-color: #F99C5F;}
+.infSelectAccAt{background-color: #FFFEEB; border-color: #F99C5F;}
+.infSelectAcc p{text-transform:capitalize; line-height:20px; text-align:left; margin-left:10px; font-weight: 400;}
+.infSelectAcc strong{text-transform:capitalize;}
+
+.btnSelectAcc{width:100%;font-size: 13px;color: #464646;font-weight: bold;text-decoration: none; text-align:center; background: #d2d2d2; padding:5px 0; border-radius:5px; margin-top:5px; border:1px solid #f6f6f6;}
+.btnSelectAcc:hover, .btnSelectAcc:active{background:linear-gradient(to top, #e45402, #f46412); font-size: 13px; border-color: #f0600e; color: #FFFFFF;}
+.btnSelectAccAt{width:100%;font-size: 13px;color: #FFFFFF;font-weight: bold;text-decoration: none; text-align:center; background: linear-gradient(to top, #e45402, #f46412); padding:5px 0; border-radius:5px; margin-top:5px; border:1px solid #f0600e;}
+
+.logTexto{color: #464646; margin-top: 35px; display: none; float: left; text-align: center; font-family: Arial; font-size: 12px; margin-left: 127px;}
+
+.logar{float:left;margin-nottom:20px; text-align: center; width:100%; display:none; font-family: Arial;}
+.logar a{font-size: 13px; display:inline;color: #FFFFFF;text-decoration: none; text-align:center; background: linear-gradient(to top, #e45402, #f46412); padding:5px 20px 6px 20px !important; border-radius:0px 5px 5px 0; margin-top:5px; border:1px solid #f0600e; padding:3px 20px; cursor:pointer;}
+.logar a:hover{text-decoration: none; display:inline;}
+.logar div:nth-child(2){display: inline-block;}
+.logar input[type="password"]{height:26px !important; margin-right:0px; border:1px solid #e95907 !important;}
+
+/* ============================================ */
+/* Botão										*/
+/* ============================================ */
+
+.btnGenericoDir				{ background: url("../images/Botao/btnGenericRight.gif") no-repeat scroll right top transparent; float: left; height: 29px; padding: 7px 0 0; width: auto; line-height: 10px;}
+.btnGenericoEsq				{ background: url("../images/Botao/btnGenericLeft.gif") no-repeat scroll left top transparent; float: left; height: 29px; width: 3px; }
+
+.bgInputLoginCorporativo	{ background: url("../images/Background/bgInputLogin.jpg") no-repeat scroll left top transparent; width: 143px; height: 26px; border:0; padding: 0 8px;}
+
+/* ============================================ */
+/* Novo login									*/
+/* ============================================ */
+
+.BgLoginCorporativo2			{ background-color: white;	border: 1px solid #dedddd; height: 175px;	padding: 0;	width: 318px; right: -39px !important;box-shadow: 0px 0px 8px grey;margin-top: 16px !important;}
+.BgLoginCorporativo2 .check-login		{ background:#f6f6f6;width:100%;margin-bottom:15px; }
+.BgLoginCorporativo2 .check-login .check-boxes	td { padding:15px;}
+.BgLoginCorporativo2 .check-login .check-boxes	td#idRadioLogin, .BgLoginCorporativo2 .check-login .check-boxes	td#idRadioLogin { padding-left:0;}
+.BgLoginCorporativo2 .check-login .check-boxes	.Texto {color:#666;font-size:12px;font-family: "open_sansregular";}
+.BgLoginCorporativo2 .seta-topo			{ position:absolute;left:50%;margin-left:-5px;margin-top:-15px; }
+
+#idInputLoginUsuario {padding-right:15px; }
+#idInputLoginUsuario input{margin-bottom:15px;  }
+
+#tdBotaologin {padding:10px 0;}
+#tdBotaologin a:hover {background:#009bd8!important;color:#fff;}
+
+.check-boxes {}
+.check-boxes input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  -o-opacity: 0;
+  z-index:9999;
+  top:27px;
+  margin-left: 4px;
+}
+
+.check-boxes input[type="radio"] + label {
+  position: relative;
+  padding: 0 0 0 25px;
+  font-size: 16px;
+  line-height: 25px;
+  margin:0 0 10px 0;
+  color:#009bd8;
+  font-weight:normal;
+  text-transform:none;  
+}
+
+.check-boxes input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  height: 20px;
+  width: 20px;
+  background: url(../images/Login/radio-login-cpf.png) no-repeat right center;
+}
+
+.check-boxes input[type="radio"]:checked + label:before {
+  background: url(../images/Login/radio-login-cpf.png) no-repeat left center;
+}
+
+/* +3 acessos */
+
+.alertaMultiplos {margin-top: 20px; background:#f2f2f2 url(../images/Login/alerta-multiplos.png) no-repeat 60px center;border:1px solid #cdcbcb; border-radius:1px;padding:57px 70px 45px 190px;}
+.alertaMultiplos h3{font-size:18px;color:#666666;font-family: "open_sansregular";margin-bottom:18px;  }
+.alertaMultiplos p{font-size:18px;color:#666666;font-family: "open_sansregular";margin-bottom:18px;  }
+
+.p-aviso {background:#fff1f1;border:1px solid #f4a2a2; border-radius:1px;padding:10px;text-align:center;font-size:12px;color:#666;font-family: "open_sansregular"; }
+.p-aviso span{color:#d51c1c; }
+
+/* Até 3 acessos */
+
+.ate-tres {}
+.ate-tres h3{font-size:30px;color:#444;font-family: "open_sansregular";margin-bottom:18px;  }
+
+.ate-tres ul {margin-top:20px;}
+.ate-tres ul li{list-style:none;padding:20px 15px; border:1px solid #d1d1d1;border-bottom:none;border-radius:1px;  }
+.ate-tres ul li:nth-child(odd){background:#f2f2f2;}
+.ate-tres ul li:last-child{border-bottom:1px solid #d1d1d1;}
+
+.ate-tres .btnSelectAcc {display:none;}
+
+.pegForm div[style="padding-top:15px;"] {display:none;}
+
+.ate-tres input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  -o-opacity: 0;
+  z-index:2;
+}
+
+.ate-tres input[type="radio"] + label {
+  position: relative;
+  padding: 0 0 0 28px;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 20px 0 -5px;
+  z-index:1;
+}
+
+.ate-tres input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  height: 28px;
+  width: 28px;
+  background: url(../images/Login/check-acc.png) no-repeat right center;
+  z-index:1;
+}
+
+.ate-tres input[type="radio"]:checked + label:before {
+  background: url(../images/Login/check-acc.png) no-repeat left center;
+}
+
+.accRole {background:#948b7a; border-radius:4px;padding:5px;font-size:10px;color:#fff;font-family: "open_sansregular";text-align:center;margin-right:20px; min-width:60px;   }
+.accInfo {padding:5px;font-size:13px;color:#666;font-family: "open_sansregular";margin-right:10px; width:290px; overflow:hidden; }
+.accInfo span{color:#434242; }
+.accInfo span.mail{color:#0098d4; }
+
+.ate-tres input[type="password"] {border:1px solid #ccc; border-radius:5px;height:32px; width:135px; padding-left:5px; }
+
+.pegForm div{ display:inline-block; vertical-align:top; margin-top:10px; }
+.pegForm div.bt{ padding-top:5px;  }
+
+.pegForm div a {background:#1a75ce; border-radius:5px; border-bottom:4px solid #086b9c;font-size:13px;color:#fff;font-family: "open_sansregular";padding:5px 10px; text-transform:none;margin-left:20px;   }
+
+/* popup */
+.boxBlackBg {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:999;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.accPopup {
+	position:absolute;
+	width:560px;
+	height:260px;
+	top:50%;
+	left:50%;
+	margin:-130px 0 0 -280px;
+	z-index:99999;
+	background:#f2f2f2;
+	border:5px solid #ccc;
+	border-radius:5px; 
+}
+
+.accPopup .boxFechar{
+	background:#00a1e4;
+	padding:5px 8px;
+	color:#fff;
+	font-family: "open_sansregular";
+	position:absolute;
+	right:0;
+	top:0;
+	margin: -20px -14px 0 0;
+}
+
+.accPopup h4 {text-align:center;font-size:21px;color:#ed1c24;font-family: "open_sansregular";text-transform:uppercase;padding:30px 0 20px;  }
+.accPopup p {text-align:center;font-size:19px;color:#666666;font-family: "open_sansregular";padding:0 0 10px 0; }
+.accPopup div a {display:block;float:left;width:160px;text-align:center;padding:10px 0;background:#fff;font-family: "open_sansregular";font-size:17px; margin-top:20px; color:#666;margin-right:20px; }
+.accPopup div a.accEscolher {background:#00a1e4;color:#fff; }
+.accPopup div a.accCancel {margin-left:95px;  }
+.accPopup div a:hover {opacity:.7;}
+
+.accMail {color:#00a1e4;}
+
+.logar {display:none;}
+
+/* ============================================ */
+/* Texto										*/
+/* ============================================ */
+
+.TituloLivroIndicado			{ font-family:Arial; font-size:12px;  color:#3E3E3C; font-weight:bold; }
+.InfoLivroIndicado			{ font-family:Arial; font-size:11px;  color:#4B4B4B; font-weight:bold; }  
+
+/* Família */
+.Arial							{ font-family:Arial; }
+.Tahoma							{ font-family:Tahoma; }
+
+
+/* Tamanho */
+.n9								{ font-size:9px; }
+.n10								{ font-size:10px; }
+.n11								{ font-size:11px; }
+.n12								{ font-size:12px; }
+.n25								{ font-size:25px; }
+
+/* Cor */
+.Cinza2							{ color:#3E3E3E; }
+.Cinza9							{ color:#626262; }
+.Cinza8							{ color:#a6a6a6; }
+.Laranja							{ color:#F26623; }
+.Vermelho						{ color:#FE0217; }
+
+
+
+.lstEscolaBusca {	 cursor: pointer;	}
+.lstEscolaBusca:hover { text-decoration: underline;	}
